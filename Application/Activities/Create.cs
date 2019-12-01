@@ -40,6 +40,7 @@ namespace Application.Activities
                     City = request.City,
                     Venue = request.Venue
                 };
+
                 _context.Activities.Add(activity);
                 var success = await _context.SaveChangesAsync() > 0;
 
